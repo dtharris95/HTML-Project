@@ -1,0 +1,89 @@
+/* Rules for body of website */
+#wrapper {
+    width: 80%;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    background-color: black;
+    max-width: 1750px;
+    margin: auto;
+    color: white;
+}
+
+/* Rules for header section of website */
+header {
+    border: white;
+    border-width: 5px;
+    background-color: black;
+    border-style: solid;
+    line-height: 3;
+    text-align: center;
+    height: 100px;
+}
+
+header img {float: left;}
+
+nav {
+    background-color: darkorange;
+    padding: 10px;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {text-decoration: none;}
+nav a :hover {color: orange;}
+
+main {
+    background: black;
+    font-weight: bold;
+    font-size: 25px;
+    border: black;
+    border-style: solid;
+    border-width: 4px;
+    height: 1000px;
+}
+
+main img {float: right;}
+
+/* centers h1 element */
+h1 {
+    margin: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {margin: 0;}
+    #wrapper {width: auto;}
+    main {margin-left: 10px;
+        margin-right: 0;}
+    header {height: auto; line-height: auto;}
+    header-img {float: none;}
+    main img {float: none;}
+    nav {width: auto; height: auto;}
+    nav li {float: none;
+            display: inline-block;
+            padding: 0.5em; }
+    nav ul {text-align: center;}
+    nav a {border-style: none;}
+    h1, h2 {font-size: 120%;}
+    p {font-size: 90%; }
+    }
+
+@media only screen and (max-width: 768px) {
+    main {margin-left: 10px; margin-right: 10px; margin-bottom: 10px;}
+    h1, h2 { font-size: 120%; }
+    p { font-size: 90%; }
+    img { display: none; float: none;}
+    nav, nav ul, nav li {padding: 0;}
+    nav li {display: block;}
+    nav a {display: block; padding: 0.3em; border-bottom: 2px ridge black;}
+}
+
