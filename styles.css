@@ -54,6 +54,15 @@ main {
 
 main img {float: right;}
 
+.trade-images {
+    height: 300px;
+}
+
+.history-image {
+    height: 250px;
+    padding-left: 10px;
+}
+
 /* centers h1 element */
 h1 {
     margin: auto;
